@@ -5,13 +5,14 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+<!--Общее-->
+<!-- Использую следующие классы для кнопок: "btn-red" & "btn-white".
+"btn-red" - для кнопок красного цвета, "btn-white" для белого.-->
 <!--Background-->
-    <div class="toggle">
-      <input type="radio" name="radio" value="1">
-      <input type="radio" name="radio" value="2">
-      <input type="radio" name="radio" value="3">
-    </div>
     <div class="index-background">
+      <input type="radio" id="toggle-1" class="toggle-1" name="toggle-1" value="1">
+      <input type="radio" id="toggle-2" class="toggle-2" name="toggle-2" value="2">
+      <input type="radio" id="toggle-3" class="toggle-3" name="toggle-3" value="3">
 <!--Header-->
     <header class="main-header">
 	    <div class="container">
@@ -22,7 +23,7 @@
 <!--Main navigation-->
 	      <nav class="main-nav">
 	        <ul>
-	          <li><a href="#">Каталог</a>
+	          <li><a href="#" class="btn-white main-nav-btn">Каталог</a>
               <ul class="sub-main-nav">
                 <li><a href="#">Новинки</a></li>
                 <li><a href="#">Сливочное</a></li>
@@ -40,24 +41,25 @@
         <div class="user-block">
           <div class="search-btn">
 	          <a href="#" class="search-btn-img"></a>
-            <input type="search" name="search" placeholder="Что ищем?">
+            <label for="search">Что ищем?</label>
+              <input type="search" id="search" name="search">
           </div>
   <!--Login-->
           <div class="login">
-	          <a href="#">Вход</a>
+	          <a href="#" class="btn-white login-btn-first">Вход</a>
             <form action="#" method="post" class="login-entrance">
               <label for="email">Электронная почта</label>
                 <input type="email" name="email" id="email">
               <label for="password">Пароль</label>
                 <input type="password" name="password" id="password">
-              <button class="btn btn-login" type="submit">Войти</button>
+              <button class="btn-red login-submit-btn" type="submit">Войти</button>
             </form>
             <a href="#" class="forgotten-login">Забыли пароль?</a>
             <a href="#" class="new-sign-up">Новая регистрация</a>
           </div>
   <!--Basket-->
           <div class="basket">
-            <a href="#" class="btn btn-basket">Пусто</a>
+            <a href="#" class="btn-white basket-btn">Пусто</a>
 	        </div>
   <!--Contact info-->
 	        <div class="mode">
@@ -65,7 +67,11 @@
 	          <p>8 812 450-25-25</p>
 	        </div>
 	      </div>
-<!--Slider-->
+      </div>
+    </header>
+<!--Main Field-->
+    <main class="container">
+  <!--Slider-->
       <div class="slider">
         <div class="slider-slide-first">
           <h2>Крем-брюле и пломбир с малиновым джемом</h2>
@@ -74,87 +80,90 @@
         <div class="slider-slide-second">
           <h2>Шоколадный пломбир и лимонный сорбет</h2>
           <img src="#" alt="slider-item-2" width="644" height="582">
-          </div>
+        </div>
         <div class="slider-slide-third">
           <h2>Пломбир с помадкой и клубничный щербет</h2>
           <img src="#" alt="slider-item-3" width="639" height="582">
         </div>
-        <div class="slider-controls">
-
-
+        <div class="slider-toggle">
+          <label for="toggle-1"></label>
+          <label for="toggle-2"></label>
+          <label for="toggle-3"></label>
         </div>
       </div>
-      </div>
-    </header>
-<!--Main Field-->
-    <main class="container">
   <!--Banner-->
       <div class="banner">
         <div class="banner-first">
           <h3 class="banner-title">Малинка даром</h3>
           <p class="banner-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ
             банку малинового варенья бесплатно.</p>
-          <a href="#" class="btn">Хочу варенье!</a>
+          <a href="#" class="btn-red banner-first-btn">Хочу варенье!</a>
         </div>
         <div class="banner-second">
           <h3 class="banner-title">Шоколадки даром!</h3>
           <p class="banner-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
             шоколадной присыпки совершенно бесплатно.</p>
-          <a href="#" class="btn">Хочу шоколадки!</a>
+          <a href="#" class="btn-red banner-second-btn">Хочу шоколадки!</a>
         </div>
       </div>
   <!--Items list-->
       <div class="popular-items">
-    <!--Firts-Ice-cream-->
-        <div class="ice-cream-1">
-          <span class="ice-icon"></span>
-          <img class="ice-pic" src="#" alt="Сливочное с апельсиновым кремом" width="267" height="267">
-          <span class="ice-price">310</span>
+        <div class="ice-cream">
+    <!--1-->
+          <span class="ice-cream-icon"></span>
+          <img class="ice-cream-pic" src="#" alt="Сливочное с апельсиновым кремом" width="267" height="267">
+          <span class="ice-cream-price">310</span>
           <span class="rubble"></span>
-          <span class="ice-price-measure">/кг</span>
-          <p class="ice-cream-title"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
-        </div>
-    <!--Second-Ice-cream-->
-        <div class="ice-cream-2">
+          <span class="ice-cream-measure">/кг</span>
+          <p class="ice-cream-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            <div class="ice-cream-footer">
+              <a href="#" class="btn-red ice-cream-footer-btn">Быстрый просмотр</a>
+            </div>
+    <!--2-->
           <span class="ice-icon"></span>
           <img class="ice-pic" src="#" alt="Сливочно-кофейное" width="267" height="267">
           <span clacc="ice-price">380</span>
           <span class="rubble"></span>
-          <span class="ice-price-measure">/кг</span>
-          <p class="ice-cream-title"><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
-        </div>
-    <!--Third-Ice-cream-->
-        <div class="ice-cream-3">
+          <span class="ice-cream-measure">/кг</span>
+          <p class="ice-cream-title">Сливочно-кофейное с кусочками шоколада</p>
+            <div class="ice-cream-footer">
+              <a href="#" class="btn-red ice-cream-footer-btn">Быстрый просмотр</a>
+            </div>
+    <!--3-->
           <span class="ice-icon"></span>
           <img class="ice-pic" src="#" alt="Сливочно-клубничное" width="267" height="267">
           <span clacc="ice-price">355</span>
           <span class="rubble"></span>
-          <span class="ice-price-measure">/кг</span>
-          <p class="ice-cream-title"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
-        </div>
-    <!--Fourth-Ice-cream-->
-        <div class="ice-cream-4">
+          <span class="ice-cream-measure">/кг</span>
+          <p class="ice-cream-title">Сливочно-клубничное с присыпкой из белого шоколада</p>
+            <div class="ice-cream-footer">
+              <a href="#" class="btn-red ice-cream-footer-btn">Быстрый просмотр</a>
+            </div>
+    <!--4-->
           <span class="ice-icon"></span>
           <img class="ice-pic" src="#" alt="Сливочное крем-брюле" width="267" height="267">
           <span clacc="ice-price">415</span>
           <span class="rubble"></span>
-          <span class="ice-price-measure">/кг</span>
-          <p class="ice-cream-title"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
+          <span class="ice-cream-measure">/кг</span>
+          <p class="ice-cream-title">Сливочное крем-брюле с карамельной подливкой</p>
+            <div class="ice-cream-footer">
+              <a href="#" class="btn-red ice-cream-footer-btn">Быстрый просмотр</a>
+            </div>
+          </div>
         </div>
-      </div>
   <!--Features-->
       <div class="features">
-        <h3></h3>
+        <h3 class="feature-title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
     <!--First feature-->
         <div class="feature-first">
-          <span class="icon"></span>
+          <span class="feature-icon"></span>
           <p>Все наше мороженое изготавливается на собственном производстве,
             с использованием современного оборудования и проверенных временем технологий.
           </p>
         </div>
     <!--Second feature-->
         <div class="feature-second">
-          <span class="icon"></span>
+          <span class="feature-icon"></span>
           <p>Для приготовления мороженого используются настоящие сливки и молоко
             высочайшего качества. Все дополнительные ингредиенты и добавки
             произведены из натурального, экологически чистого сырья.
@@ -162,14 +171,14 @@
         </div>
     <!--Third feature-->
         <div class="feature-third">
-          <span class="icon"></span>
+          <span class="feature-icon"></span>
           <p>Закупка ингредиентов  производится только у проверенных фермерских
             хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
           </p>
         </div>
     <!--Fourth feature-->
         <div class="feature-fourth">
-          <span class="icon"></span>
+          <span class="feature-icon"></span>
           <p>Доставка нашего мороженого до заказчиков осуществляется в специальном
             термопаке, который не дает мороженому растаять в пути и позволяет
             сохранить превосходный вкус.
@@ -189,14 +198,14 @@
           самого вкусного, что у нас происходит. Обещаем не спамить и не слать
           всякой не нужной ерунды. Честно =)</p>
         <input type="email" class="email" placeholder="Ваша электронная почта">
-        <button class="btn btn-subscribe" name="btn-subscribe" type="button" value="Отправить">
+        <button class="btn-red subscribe-btn" name="subscribe-btn" type="button" value="Отправить">
       </div>
   <!--Map area-->
       <div class="map">
         <map></map>
-        <div class="marker">
+        <div class="map-marker">
         </div>
-        <div class="contact-info">
+        <div class="map-contact-field">
           <p>
               Адрес главного офиса и<br>
               офлайн магазина:<br>
@@ -209,7 +218,7 @@
            <b>8 812 450-25-25</b>
          </p>
           <p>(с 10 до 20 ежедневно)</p>
-          <a class="btn" href="#">Форма обратной связи</a>
+          <a class="btn-red contact-btn" href="#">Форма обратной связи</a>
         </div>
       </div>
     </main>
@@ -223,7 +232,7 @@
         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
       </section>
   <!--Links-->
-      <div class="hot-links">
+      <div class="footer-hot-links">
         <a href="#"><b>Для поставщиков</b></a>
         <a href="#">О производстве</a>
         <a href="#">Наши документы</a>
@@ -247,7 +256,7 @@
               <input type="email" name="email" id="email">
             <label for="comment">Напишите что-нибудь...</label>
               <textarea name="comment" id="comment" rows="10"></textarea>
-            <button class="btn btn-feedback" type="submit">Отправить</button>
+            <button class="btn-red feedback-btn" type="submit">Отправить</button>
           </fieldset>
         </form>
       </div>
