@@ -6,13 +6,13 @@
   </head>
   <body>
 <!--Общее-->
-<!-- Использую следующие классы для кнопок: "btn-red" & "btn-white".
-"btn-red" - для кнопок красного цвета, "btn-white" для белого.-->
+<!-- Использую следующие классы для кнопок: "btn-default" & "btn-special".
+"btn-default" - для кнопок красного цвета, "btn-special" для белого.-->
 <!--Background-->
+    <input type="radio" id="toggle-1" class="toggle-1" name="toggle-1" value="1">
+    <input type="radio" id="toggle-2" class="toggle-2" name="toggle-2" value="2">
+    <input type="radio" id="toggle-3" class="toggle-3" name="toggle-3" value="3">
     <div class="index-background">
-      <input type="radio" id="toggle-1" class="toggle-1" name="toggle-1" value="1">
-      <input type="radio" id="toggle-2" class="toggle-2" name="toggle-2" value="2">
-      <input type="radio" id="toggle-3" class="toggle-3" name="toggle-3" value="3">
 <!--Header-->
     <header class="main-header">
 	    <div class="container">
@@ -23,7 +23,7 @@
 <!--Main navigation-->
         <nav class="main-nav">
           <ul>
-            <li><a href="#" class="btn-white main-nav-btn">Каталог</a>
+            <li><a href="#" class="btn-special main-nav-btn">Каталог</a>
               <ul class="sub-main-nav">
                 <li><a href="#">Новинки</a></li>
                 <li><a href="#">Сливочное</a></li>
@@ -41,26 +41,30 @@
         <div class="user-block">
           <div class="search-btn">
         	  <a href="#" class="search-btn-img"></a>
+          </div>
+          <div class="search-popup">
             <label for="search">Что ищем?</label>
-              <input type="search" id="search" name="search">
+            <input type="search" id="search" name="search">
           </div>
   <!--Login-->
           <div class="login">
-        	  <a href="#" class="btn-white login-btn-first">Вход</a>
+        	  <a href="#" class="btn-special login-btn-first">Вход</a>
+            <div class="login-popup">
             <form action="#" method="post" class="login-entrance">
               <label for="email">Электронная почта</label>
-                <input type="email" name="email" id="email">
+              <input type="email" name="email" id="email">
               <label for="password">Пароль</label>
-                <input type="password" name="password" id="password">
-              <button class="btn-red login-submit-btn" type="submit">Войти</button>
+              <input type="password" name="password" id="password">
+              <button class="btn-default login-submit-btn" type="submit">Войти</button>
             </form>
             <a href="#" class="forgotten-login">Забыли пароль?</a>
             <a href="#" class="new-sign-up">Новая регистрация</a>
+            </div>
           </div>
   <!--Basket-->
           <div class="basket">
             <a href="#">2 товара</a>
-              <div class="basket-table">
+              <div class="basket-popup">
                 <form action="#" method="post">
                   <input type="reset" class="reset-items" value="Сбросить">
                   <span class="basket-item">Пломбир с апельсиновым джемом</span>
@@ -69,7 +73,7 @@
                   <span class="basket-item price">1,5 кг х 300 руб. 450 руб.</span>
                   <hr>
                   <b class="basket-sum">Итого: 750 руб.</b>
-                  <a href="#" class="btn-red basket-btn">Оформить заказ</a>
+                  <a href="#" class="btn-default basket-btn">Оформить заказ</a>
                 </form>
               </div>
         	</div>
@@ -95,155 +99,178 @@
     <!--Filters-->
       <div class="filters">
         <form action="#">
-          <label for="sorting">Сортировка</label>
-            <select name="sorting" class="sorting" id="sorting">
+          <fieldset class="sorting">
+            <legend>Сортировка</legend>
+            <select name="sorting">
               <option value="popular" checked>по популярности</option>
               <option value="low-price">сначала недорогие</option>
               <option value="high-price">сначала дорогие</option>
               <option value="richness">по жирности</option>
             </select>
-          <label for="price">Цена: 100 - 500 руб.</label>
-            <input type="range" name="price" class="price" id="price" min="100" max="500" step="50">
-          <label for="richness">Жирность</label>
-            <select name="richness">
-              <optgroup label="Жирность">
-                <input type="checkbox" value="0%">
-                <input type="checkbox" value="до 10%" checked>
-                <input type="checkbox" value="до 30%">
-                <input type="checkbox" value="выше 30%">
-              </optgroup>
-            </select>
-          <label for="stuff">Наполнители</label>
-            <input type="checkbox" checked value="шоколадные">
-            <input type="checkbox" checked value="сахарные присыпки">
-            <input type="checkbox" value="фрукты">
-            <input type="checkbox" value="сиропы">
-            <input type="checkbox" value="джемы">
-          <button class="btn-white filters-btn" value="Применить" type="submit">
+          </fieldset>
+          <fieldset class="price">
+            <legend>Цена: 100 - 500 руб.</legend>
+            <input type="range" name="price" min="100" max="500" step="50">
+          </fieldset>
+          <fieldset class="richness">
+            <legend>Жирность</legend>
+            <label for="0%">0%</label>
+            <input type="radio" name="0%" id="0%" value="0%">
+            <label for="до 10%">до 10%</label>
+            <input type="radio" name="до 10%" id="до 10%" value="до 10%" checked>
+            <label for="до 30%">до 30%</label>
+            <input type="radio" name="до 30%" id="до 30%" value="до 30%">
+            <label for="выше 30%">выше 30%</label>
+            <input type="radio" name="выше 30%" id="выше 30%" value="выше 30%">
+          </fieldset>
+          <fieldset class="stuff">
+            <legend>Наполнители</legend>
+            <label for="chocolate">
+            <input type="checkbox" name="chocolate" id="chocolate" value="шоколадные" checked>
+            <label for="sugar">
+            <input type="checkbox"  name="sugar" id="sugar" value="сахарные присыпки" checked>
+            <label for="fruits">
+            <input type="checkbox" name="fruits" id="fruits" value="фрукты">
+            <label for="syrup">
+            <input type="checkbox" name="syrup" id="syrup" value="сиропы">
+            <label for="jam">
+            <input type="checkbox" name="jam" id="jam" value="джемы">
+          </fieldset>
+          <button class="btn-special filters-btn" type="submit" value="Применить">
         </form>
       </div>
     <!--Items list-->
       <div class="items-list">
-        <div class="ice-cream">
       <!--1-->
-         <span class="ice-cream-icon"></span>
+        <div class="ice-cream">
          <img class="ice-cream-pic" src="#" alt="Сливочное с апельсиновым кремом" width="267" height="267">
          <span class="ice-cream-price">310</span>
          <span class="rubble"></span>
          <span class="ice-cream-measure">/кг</span>
          <p class="ice-cream-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
            <div class="ice-cream-footer">
-            <a href="#" class="btn-red ice-cream-footer-btn">Быстрый просмотр</a>
+            <a href="#" class="btn-default ice-cream-footer-btn">Быстрый просмотр</a>
            </div>
+        </div>
       <!--2-->
-          <span class="ice-cream-icon"></span>
+        <div class="ice-cream">
           <img class="ice-cream-pic" src="#" alt="Сливочно-кофейное" width="267" height="267">
           <span class="ice-cream-price">380</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
           <p class="ice-cream-title">Сливочно-кофейное с кусочками шоколада</p>
             <div class="ice-cream-footer">
-             <a href="#" class="btn-red ice-cream-footer-btn">Быстрый просмотр</a>
+             <a href="#" class="btn-default ice-cream-footer-btn">Быстрый просмотр</a>
             </div>
+        </div>
       <!--3-->
-          <span class="ice-cream-icon"></span>
+        <div class="ice-cream">
           <img class="ice-cream-pic" src="#" alt="Сливочно-клубничное" width="267" height="267">
           <span class="ice-cream-price">355</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
           <p class="ice-cream-title">Сливочно-клубничное с присыпкой из белого шоколада</p>
             <div class="ice-cream-footer">
-             <a href="#" class="btn-red ice-cream-footer-btn">Быстрый просмотр</a>
+             <a href="#" class="btn-default ice-cream-footer-btn">Быстрый просмотр</a>
             </div>
+        </div>
       <!--4-->
-          <span class="ice-cream-icon"></span>
+        <div class="ice-cream">
           <img class="ice-cream-pic" src="#" alt="Сливочное крем-брюле" width="267" height="267">
           <span class="ice-cream-price">415</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
           <p class="ice-cream-title">Сливочное крем-брюле с карамельной подливкой</p>
             <div class="ice-cream-footer">
-             <a href="#" class="btn-red ice-cream-footer-btn">Быстрый просмотр</a>
+             <a href="#" class="btn-default ice-cream-footer-btn">Быстрый просмотр</a>
             </div>
+        </div>
       <!--5-->
-          <span class="ice-cream-icon"></span>
+        <div class="ice-cream">
           <img class="ice-cream-pic" src="#" alt="Сливочное с брусничным джемом" width="267" height="267">
           <span class="ice-cream-price">325</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
           <p class="ice-cream-title">Сливочное с брусничным джемом</p>
             <div class="ice-cream-footer">
-             <a href="#" class="btn-red ice-cream-footer-btn">Быстрый просмотр</a>
+             <a href="#" class="btn-default ice-cream-footer-btn">Быстрый просмотр</a>
             </div>
+        </div>
       <!--6-->
-          <span class="ice-cream-icon"></span>
+        <div class="ice-cream">
           <img class="ice-cream-pic" src="#" alt="Сливочно-чернично" width="267" height="267">
           <span class="ice-cream-price">410</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
           <p class="ice-cream-title">Сливочно-черничное с цельными ягодами черники</p>
             <div class="ice-cream-footer">
-             <a href="#" class="btn-red ice-cream-footer-btn">Быстрый просмотр</a>
+             <a href="#" class="btn-default ice-cream-footer-btn">Быстрый просмотр</a>
             </div>
+        </div>
       <!--7-->
-          <span class="ice-cream-icon"></span>
+        <div class="ice-cream">
           <img class="ice-cream-pic" src="#" alt="Сливочно-лимонное" width="267" height="267">
           <span class="ice-cream-price">375</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
           <p class="ice-cream-title">Сливочно-лимонное с карамельной присыпкой</p>
             <div class="ice-cream-footer">
-             <a href="#" class="btn-red ice-cream-footer-btn">Быстрый просмотр</a>
+             <a href="#" class="btn-default ice-cream-footer-btn">Быстрый просмотр</a>
             </div>
+        </div>
       <!--8-->
-          <span class="ice-cream-icon"></span>
+        <div class="ice-cream">
           <img class="ice-cream-pic" src="#" alt="Сливочное с шоколадной стружкой" width="267" height="267">
           <span class="ice-cream-price">320</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
           <p class="ice-cream-title">Сливочное с шоколадной стружкой</p>
             <div class="ice-cream-footer">
-             <a href="#" class="btn-red ice-cream-footer-btn">Быстрый просмотр</a>
+             <a href="#" class="btn-default ice-cream-footer-btn">Быстрый просмотр</a>
             </div>
+        </div>
       <!--9-->
-          <span class="ice-cream-icon"></span>
+        <div class="ice-cream">
           <img class="ice-cream-pic" src="#" alt="Сливочно-ванильное" width="267" height="267">
           <span class="ice-cream-price">440</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
           <p class="ice-cream-title">Сливочно-ванильное с кусочками шоколада</p>
             <div class="ice-cream-footer">
-             <a href="#" class="btn-red ice-cream-footer-btn">Быстрый просмотр</a>
+             <a href="#" class="btn-default ice-cream-footer-btn">Быстрый просмотр</a>
             </div>
+        </div>
       <!--10-->
-          <span class="ice-cream-icon"></span>
+        <div class="ice-cream">
           <img class="ice-cream-pic" src="#" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
           <span class="ice-cream-price">435</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
           <p class="ice-cream-title">Сливочноe с ментоловым сиропом</p>
             <div class="ice-cream-footer">
-             <a href="#" class="btn-red ice-cream-footer-btn">Быстрый просмотр</a>
+             <a href="#" class="btn-default ice-cream-footer-btn">Быстрый просмотр</a>
             </div>
+        </div>
       <!--11-->
-          <span class="ice-cream-icon"></span>
+        <div class="ice-cream">
           <img class="ice-cream-pic" src="#" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
           <span class="ice-cream-price">355</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
           <p class="ice-cream-title">Сливочное с кусочками черного шоколада</p>
             <div class="ice-cream-footer">
-             <a href="#" class="btn-red ice-cream-footer-btn">Быстрый просмотр</a>
+             <a href="#" class="btn-default ice-cream-footer-btn">Быстрый просмотр</a>
             </div>
+        </div>
       <!--12-->
-          <span class="ice-cream-icon"></span>
+        <div class="ice-cream">
           <img class="ice-cream-pic" src="#" alt="Сливочное с мятным сиропом" width="267" height="267">
           <span class="ice-cream-price">420</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
           <p class="ice-cream-title">Сливочное с мятным сиропом</p>
             <div class="ice-cream-footer">
-             <a href="#" class="btn-red ice-cream-footer-btn">Быстрый просмотр</a>
+             <a href="#" class="btn-default ice-cream-footer-btn">Быстрый просмотр</a>
             </div>
         </div>
       </div>
