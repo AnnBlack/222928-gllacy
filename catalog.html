@@ -2,23 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
 <!--Общее-->
 <!-- Использую следующие классы для кнопок: "btn-default" & "btn-special".
 "btn-default" - для кнопок красного цвета, "btn-special" для белого.-->
-<!--Background-->
-    <input type="radio" id="toggle-1" class="toggle-1" name="toggle-1" value="1">
-    <input type="radio" id="toggle-2" class="toggle-2" name="toggle-2" value="2">
-    <input type="radio" id="toggle-3" class="toggle-3" name="toggle-3" value="3">
-    <div class="index-background">
 <!--Header-->
     <header class="main-header">
 	    <div class="container">
 <!--Logo-->
         <div class="logo-item">
-          <img src="#" width="150" height="50" alt="Gllacy Shop">
+          <img src="img/logo-gllacy.svg" width="150" height="50" alt="Gllacy Shop">
         </div>
 <!--Main navigation-->
         <nav class="main-nav">
@@ -114,27 +111,27 @@
           </fieldset>
           <fieldset class="richness">
             <legend>Жирность</legend>
-            <label for="0%">0%</label>
-            <input type="radio" name="0%" id="0%" value="0%">
-            <label for="до 10%">до 10%</label>
-            <input type="radio" name="до 10%" id="до 10%" value="до 10%" checked>
-            <label for="до 30%">до 30%</label>
-            <input type="radio" name="до 30%" id="до 30%" value="до 30%">
-            <label for="выше 30%">выше 30%</label>
-            <input type="radio" name="выше 30%" id="выше 30%" value="выше 30%">
+            <label for="richness-0">0%</label>
+            <input type="radio" name="richness" id="richness-0" value="0">
+            <label for="under-10">до 10%</label>
+            <input type="radio" name="richness" id="under-10" value="under-10" checked>
+            <label for="under-30">до 30%</label>
+            <input type="radio" name="richness" id="under-30" value="under-30">
+            <label for="above-30">выше 30%</label>
+            <input type="radio" name="richness" id="above-30" value="above-30">
           </fieldset>
           <fieldset class="stuff">
             <legend>Наполнители</legend>
-            <label for="chocolate">
-            <input type="checkbox" name="chocolate" id="chocolate" value="шоколадные" checked>
-            <label for="sugar">
-            <input type="checkbox"  name="sugar" id="sugar" value="сахарные присыпки" checked>
-            <label for="fruits">
-            <input type="checkbox" name="fruits" id="fruits" value="фрукты">
-            <label for="syrup">
-            <input type="checkbox" name="syrup" id="syrup" value="сиропы">
-            <label for="jam">
-            <input type="checkbox" name="jam" id="jam" value="джемы">
+            <label for="chocolate">шоколадные</label>
+            <input type="checkbox" name="chocolate" id="chocolate" checked>
+            <label for="sugar">сахарные присыпки</label>
+            <input type="checkbox" name="sugar" id="sugar" checked>
+            <label for="fruits">фрукты</label>
+            <input type="checkbox" name="fruits" id="fruits">
+            <label for="syrup">сиропы</label>
+            <input type="checkbox" name="syrup" id="syrup">
+            <label for="jam">джемы</label>
+            <input type="checkbox" name="jam" id="jam">
           </fieldset>
           <button class="btn-special filters-btn" type="submit" value="Применить">
         </form>
@@ -143,7 +140,7 @@
       <div class="items-list">
       <!--1-->
         <div class="ice-cream">
-         <img class="ice-cream-pic" src="#" alt="Сливочное с апельсиновым кремом" width="267" height="267">
+         <img class="ice-cream-pic" src="img/ice-cream-1.jpg" alt="Сливочное с апельсиновым кремом" width="267" height="267">
          <span class="ice-cream-price">310</span>
          <span class="rubble"></span>
          <span class="ice-cream-measure">/кг</span>
@@ -154,7 +151,7 @@
         </div>
       <!--2-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="#" alt="Сливочно-кофейное" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-2.jpg" alt="Сливочно-кофейное" width="267" height="267">
           <span class="ice-cream-price">380</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -165,7 +162,7 @@
         </div>
       <!--3-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="#" alt="Сливочно-клубничное" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-3.jpg" alt="Сливочно-клубничное" width="267" height="267">
           <span class="ice-cream-price">355</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -176,7 +173,7 @@
         </div>
       <!--4-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="#" alt="Сливочное крем-брюле" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-4.jpg" alt="Сливочное крем-брюле" width="267" height="267">
           <span class="ice-cream-price">415</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -187,7 +184,7 @@
         </div>
       <!--5-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="#" alt="Сливочное с брусничным джемом" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-5.jpg" alt="Сливочное с брусничным джемом" width="267" height="267">
           <span class="ice-cream-price">325</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -198,7 +195,7 @@
         </div>
       <!--6-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="#" alt="Сливочно-чернично" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-6.jpg" alt="Сливочно-чернично" width="267" height="267">
           <span class="ice-cream-price">410</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -209,7 +206,7 @@
         </div>
       <!--7-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="#" alt="Сливочно-лимонное" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-7.jpg" alt="Сливочно-лимонное" width="267" height="267">
           <span class="ice-cream-price">375</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -220,7 +217,7 @@
         </div>
       <!--8-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="#" alt="Сливочное с шоколадной стружкой" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-8.jpg" alt="Сливочное с шоколадной стружкой" width="267" height="267">
           <span class="ice-cream-price">320</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -231,7 +228,7 @@
         </div>
       <!--9-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="#" alt="Сливочно-ванильное" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-9.jpg" alt="Сливочно-ванильное" width="267" height="267">
           <span class="ice-cream-price">440</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -242,7 +239,7 @@
         </div>
       <!--10-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="#" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-10.jpg" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
           <span class="ice-cream-price">435</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -253,7 +250,7 @@
         </div>
       <!--11-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="#" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-11.jpg" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
           <span class="ice-cream-price">355</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -264,7 +261,7 @@
         </div>
       <!--12-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="#" alt="Сливочное с мятным сиропом" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-12.jpg" alt="Сливочное с мятным сиропом" width="267" height="267">
           <span class="ice-cream-price">420</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -303,7 +300,7 @@
      </div>
   <!--Copyright-->
      <div class="copyright">
-        <img src="#"  class="academy-logo" alt="html-academy" width="30" height="10">
+        <img src="img/academy-logo.svg" class="academy-logo" alt="html-academy" width="30" height="10">
         <p>Сделано в<a href="#">HTML Academy</a> &copy; 2016</p>
       </div>
     </footer>
