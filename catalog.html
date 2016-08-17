@@ -8,11 +8,6 @@
 <!--Общее-->
 <!-- Использую следующие классы для кнопок: "btn-default" & "btn-special".
 "btn-default" - для кнопок красного цвета, "btn-special" для белого.-->
-<!--Background-->
-    <input type="radio" id="toggle-1" class="toggle-1" name="toggle-1" value="1">
-    <input type="radio" id="toggle-2" class="toggle-2" name="toggle-2" value="2">
-    <input type="radio" id="toggle-3" class="toggle-3" name="toggle-3" value="3">
-    <div class="index-background">
 <!--Header-->
     <header class="main-header">
 	    <div class="container">
@@ -115,26 +110,26 @@
           <fieldset class="richness">
             <legend>Жирность</legend>
             <label for="0%">0%</label>
-            <input type="radio" name="0%" id="0%" value="0%">
-            <label for="до 10%">до 10%</label>
-            <input type="radio" name="до 10%" id="до 10%" value="до 10%" checked>
-            <label for="до 30%">до 30%</label>
-            <input type="radio" name="до 30%" id="до 30%" value="до 30%">
-            <label for="выше 30%">выше 30%</label>
-            <input type="radio" name="выше 30%" id="выше 30%" value="выше 30%">
+            <input type="radio" name="radio" id="0%" value="0%">
+            <label for="under 10%">до 10%</label>
+            <input type="radio" name="radio" id="under 10%" value="under 10%" checked>
+            <label for="under 30%">до 30%</label>
+            <input type="radio" name="radio" id="under 30%" value="under 30%">
+            <label for="above 30%">выше 30%</label>
+            <input type="radio" name="radio" id="above 30%" value="above 30%">
           </fieldset>
           <fieldset class="stuff">
             <legend>Наполнители</legend>
-            <label for="chocolate">
-            <input type="checkbox" name="chocolate" id="chocolate" value="шоколадные" checked>
-            <label for="sugar">
-            <input type="checkbox"  name="sugar" id="sugar" value="сахарные присыпки" checked>
-            <label for="fruits">
-            <input type="checkbox" name="fruits" id="fruits" value="фрукты">
-            <label for="syrup">
-            <input type="checkbox" name="syrup" id="syrup" value="сиропы">
-            <label for="jam">
-            <input type="checkbox" name="jam" id="jam" value="джемы">
+            <label for="chocolate">шоколадные</label>
+            <input type="checkbox" name="chocolate" id="chocolate" checked>
+            <label for="sugar">сахарные присыпки</label>
+            <input type="checkbox" name="sugar" id="sugar" checked>
+            <label for="fruits">фрукты</label>
+            <input type="checkbox" name="fruits" id="fruits">
+            <label for="syrup">сиропы</label>
+            <input type="checkbox" name="syrup" id="syrup">
+            <label for="jam">джемы</label>
+            <input type="checkbox" name="jam" id="jam">
           </fieldset>
           <button class="btn-special filters-btn" type="submit" value="Применить">
         </form>
