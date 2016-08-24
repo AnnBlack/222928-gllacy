@@ -4,6 +4,8 @@ body {
   line-height: 22px;
   color: #ffffff;
   font-weight: bold;
+  margin: 0 0;
+  padding: 0 0;
 }
 h1 {
   font-size: 60px;
@@ -22,4 +24,179 @@ h3 {
   line-height: 35px;
   color: #ffffff;
   font-weight: bold;
+}
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.logo-item {
+  float: left;
+  width: 153px;
+  height: 63px;
+}
+.main-nav {
+  float: left;
+  width: 720px;
+  min-height: 40px;
+}
+.user-block {
+  display: inline-block;
+  width: 262px;
+  min-height: 89px;
+}
+.search-btn {
+  float: left;
+  width: 32px;
+  min-height: 32px;
+  background-color: #9db1a5;
+  border-radius: 20px;
+}
+.login {
+  float: left;
+  width: 92px;
+  margin-left: 11px;
+  margin-right: 11px;
+  min-height: 32px;
+  background-color: #9db1a5;
+  border-radius: 15px;
+}
+.login a {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
+.basket {
+  float: left;
+  width: 116px;
+  min-height: 32px;
+  margin-bottom: 10px;
+  background-color: #9db1a5;
+  border-radius: 15px;
+}
+.basket a {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
+.mode {
+  float: right;
+  width: 168px;
+}
+.slider {
+
+}
+.banner-first {
+  float: left;
+  width: 560px;
+  height: 229px;
+  background-color: red;
+}
+.banner-second {
+  float: right;
+  width: 560px;
+  height: 229px;
+  background-color: red;
+  margin-right: 53px;
+  margin-bottom: 40px;
+}
+.popular-items {
+  width: auto;
+}
+.ice-cream {
+  float: left;
+  margin-right: 26px;
+  width: 267px;
+  margin-bottom: 40px;
+}
+.features {
+  display: inline-block;
+  width: 1146px;
+  min-height: 370px;
+  margin-bottom: 40px;
+  background-color: #e4d9be;
+}
+.blog-news {
+  float: left;
+  width: 560px;
+  height: 219px;
+  margin-bottom: 40px;
+}
+.subscribe {
+  float: right;
+  width: 560px;
+  height: 220px;
+  margin-bottom: 40px;
+  margin-right: 53px;
+  background-color: #f8f7f4;
+}
+.map {
+  display: inline-block;
+  width: 1200px;
+  min-height: 428px;
+  margin-bottom: 40px;
+}
+.map-marker {
+  position: absolute;
+  margin-top: -285px;
+  margin-left: 180px;
+  width: 160px;
+  min-height: 138px;
+  background-color: red;
+}
+.map-contact-field {
+  position: absolute;
+  margin-left: 816px;
+  margin-top: -374px;
+  margin-right: 27px;
+  margin-bottom: 60px;
+  width: 302px;
+  min-height: 304px;
+  background-color: red;
+}
+.footer-social {
+  float: left;
+  width: 400px;
+  min-height: 40px;
+}
+.footer-hot-links {
+  float: left;
+  width: 560px;
+  min-height: 37px;
+}
+.copyright {
+  float: right;
+  width: 200px;
+  min-height: 60px;
+}
+.search-popup {
+  width: 340px;
+  min-height: 84px;
+  background-color: red;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login-popup {
+  width: 277px;
+  height: 214px;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.feedback {
+  width: 476px;
+  height: 442px;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+
 }
