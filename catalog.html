@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Глейси</title>
   </head>
@@ -10,12 +10,14 @@
 <!--Общее-->
 <!-- Использую следующие классы для кнопок: "btn-default" & "btn-special".
 "btn-default" - для кнопок красного цвета, "btn-special" для белого.-->
+  <div class="site-wrapper">
+    <div class="content-wrapper">
 <!--Header-->
     <header class="main-header">
-	    <div class="container">
+	    <div class="container clearfix">
 <!--Logo-->
         <div class="logo-item">
-          <img src="img/logo-gllacy.svg" width="150" height="50" alt="Gllacy Shop">
+          <img src="img/logo-gllacy.png" width="154" height="64" alt="Gllacy Shop">
         </div>
 <!--Main navigation-->
         <nav class="main-nav">
@@ -35,44 +37,23 @@
         </nav>
 <!--Personal area-->
   <!--Search-->
-        <div class="user-block">
+        <div class="user-block clearfix">
           <div class="search-btn">
-        	  <a href="#" class="search-btn-img"></a>
-          </div>
-          <div class="search-popup">
-            <label for="search">Что ищем?</label>
-            <input type="search" id="search" name="search">
+        	  <a href="#" class="search-btn-img">
+            <span class="search-icon"></span>
+            </a>
           </div>
   <!--Login-->
           <div class="login">
-        	  <a href="#" class="btn-special login-btn-first">Вход</a>
-            <div class="login-popup">
-            <form action="#" method="post" class="login-entrance">
-              <label for="email">Электронная почта</label>
-              <input type="email" name="email" id="email">
-              <label for="password">Пароль</label>
-              <input type="password" name="password" id="password">
-              <button class="btn-default login-submit-btn" type="submit">Войти</button>
-            </form>
-            <a href="#" class="forgotten-login">Забыли пароль?</a>
-            <a href="#" class="new-sign-up">Новая регистрация</a>
-            </div>
+        	  <a href="#" class="btn-special login-btn-first">
+            <span class="login-icon">Вход</span>
+            </a>
           </div>
   <!--Basket-->
           <div class="basket">
-            <a href="#">2 товара</a>
-              <div class="basket-popup">
-                <form action="#" method="post">
-                  <input type="reset" class="reset-items" value="Сбросить">
-                  <span class="basket-item">Пломбир с апельсиновым джемом</span>
-                  <span class="basket-item price">1,5 кг х 200 руб. 300 руб.</span>
-                  <span class="basket-item">Клубничный пломбир с присыпкой из белого шоколада</span>
-                  <span class="basket-item price">1,5 кг х 300 руб. 450 руб.</span>
-                  <hr>
-                  <b class="basket-sum">Итого: 750 руб.</b>
-                  <a href="#" class="btn-default basket-btn">Оформить заказ</a>
-                </form>
-              </div>
+            <a href="#" class="btn-special basket-btn">
+            <span class="basket-icon">2 товара</span>
+            </a>
         	</div>
       <!--Contact info-->
         	<div class="mode">
@@ -140,7 +121,7 @@
       <div class="items-list">
       <!--1-->
         <div class="ice-cream">
-         <img class="ice-cream-pic" src="img/ice-cream-1.jpg" alt="Сливочное с апельсиновым кремом" width="267" height="267">
+         <img class="ice-cream-pic" src="img/ice-cream-1.png" alt="Сливочное с апельсиновым кремом" width="267" height="267">
          <span class="ice-cream-price">310</span>
          <span class="rubble"></span>
          <span class="ice-cream-measure">/кг</span>
@@ -151,7 +132,7 @@
         </div>
       <!--2-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="img/ice-cream-2.jpg" alt="Сливочно-кофейное" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-2.png" alt="Сливочно-кофейное" width="267" height="267">
           <span class="ice-cream-price">380</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -162,7 +143,7 @@
         </div>
       <!--3-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="img/ice-cream-3.jpg" alt="Сливочно-клубничное" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-3.png" alt="Сливочно-клубничное" width="267" height="267">
           <span class="ice-cream-price">355</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -173,7 +154,7 @@
         </div>
       <!--4-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="img/ice-cream-4.jpg" alt="Сливочное крем-брюле" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-4.png" alt="Сливочное крем-брюле" width="267" height="267">
           <span class="ice-cream-price">415</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -184,7 +165,7 @@
         </div>
       <!--5-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="img/ice-cream-5.jpg" alt="Сливочное с брусничным джемом" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-5.png" alt="Сливочное с брусничным джемом" width="267" height="267">
           <span class="ice-cream-price">325</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -195,7 +176,7 @@
         </div>
       <!--6-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="img/ice-cream-6.jpg" alt="Сливочно-чернично" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-6.png" alt="Сливочно-чернично" width="267" height="267">
           <span class="ice-cream-price">410</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -206,7 +187,7 @@
         </div>
       <!--7-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="img/ice-cream-7.jpg" alt="Сливочно-лимонное" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-7.png" alt="Сливочно-лимонное" width="267" height="267">
           <span class="ice-cream-price">375</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -217,7 +198,7 @@
         </div>
       <!--8-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="img/ice-cream-8.jpg" alt="Сливочное с шоколадной стружкой" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-8.png" alt="Сливочное с шоколадной стружкой" width="267" height="267">
           <span class="ice-cream-price">320</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -228,7 +209,7 @@
         </div>
       <!--9-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="img/ice-cream-9.jpg" alt="Сливочно-ванильное" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-9.png" alt="Сливочно-ванильное" width="267" height="267">
           <span class="ice-cream-price">440</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -239,7 +220,7 @@
         </div>
       <!--10-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="img/ice-cream-10.jpg" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-10.png" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
           <span class="ice-cream-price">435</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -250,7 +231,7 @@
         </div>
       <!--11-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="img/ice-cream-11.jpg" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-11.png" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
           <span class="ice-cream-price">355</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -261,7 +242,7 @@
         </div>
       <!--12-->
         <div class="ice-cream">
-          <img class="ice-cream-pic" src="img/ice-cream-12.jpg" alt="Сливочное с мятным сиропом" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-12.png" alt="Сливочное с мятным сиропом" width="267" height="267">
           <span class="ice-cream-price">420</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -304,5 +285,38 @@
         <p>Сделано в<a href="#">HTML Academy</a> &copy; 2016</p>
       </div>
     </footer>
+  <!--Search-popup-->
+    <div class="search-popup">
+      <label for="search">Что ищем?</label>
+      <input type="search" id="search" name="search">
+    </div>
+  <!--login-popup-->
+    <div class="login-popup">
+      <form action="#" method="post" class="login-entrance">
+        <label for="email">Электронная почта</label>
+        <input type="email" name="email" id="email">
+        <label for="password">Пароль</label>
+              <input type="password" name="password" id="password">
+              <button class="btn-default login-submit-btn" type="submit">Войти</button>
+            </form>
+            <a href="#" class="forgotten-login">Забыли пароль?</a>
+            <a href="#" class="new-sign-up">Новая регистрация</a>
+            </div>
+            <!--basket-popup-->
+              <div class="basket-popup">
+                <form action="#" method="post">
+                  <input type="reset" class="reset-items" value="Сбросить">
+                  <span class="basket-item">Пломбир с апельсиновым джемом</span>
+                  <span class="basket-item price">1,5 кг х 200 руб. 300 руб.</span>
+                  <span class="basket-item">Клубничный пломбир с присыпкой из белого шоколада</span>
+                  <span class="basket-item price">1,5 кг х 300 руб. 450 руб.</span>
+                  <hr>
+                  <b class="basket-sum">Итого: 750 руб.</b>
+                  <a href="#" class="btn-default basket-btn">Оформить заказ</a>
+                </form>
+              </div>
+          
+    </div>
+    </div>
   </body>
 </html>
