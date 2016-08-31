@@ -5,6 +5,8 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/normalize.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
   </head>
   <body>
 <!--Общее-->
@@ -17,8 +19,7 @@
     <div class="site-wrapper">
       <div class="content-wrapper">
 <!--Header-->
-      <header class="main-header">
-	    <div class="container clearfix">
+      <header class="container">
 <!--Logo-->
 	      <div class="logo-item">
       	  <img src="img/logo-gllacy.png" width="154" height="64" alt="Gllacy Shop">
@@ -26,14 +27,15 @@
 <!--Main navigation-->
 	      <nav class="main-nav">
 	        <ul>
-	          <li><a href="#" class="btn-special main-nav-btn">Каталог</a>
-              <ul class="sub-main-nav">
-                <li><a href="#">Новинки</a></li>
-                <li><a href="#">Сливочное</a></li>
-                <li><a href="#">Щербеты</a></li>
-                <li><a href="#">Фруктовый лед</a></li>
-                <li><a href="#">Мелорин</a></li>
-              </ul>
+	          <li><a href="#"">Каталог</a>
+                <ul class="sub-main-nav">
+                  <li><a href="#"><b>Новинки</b></a></li>
+                  <span class="sub-main-nav-line"></span>
+                  <li><a href="#">Сливочное</a></li>
+                  <li><a href="#">Щербеты</a></li>
+                  <li><a href="#">Фруктовый лед</a></li>
+                  <li><a href="#">Мелорин</a></li>
+                </ul>
               </li>
 	          <li><a href="#">Доставка и оплата</a></li>
               <li><a href="#">О компании</a></li>
@@ -43,20 +45,20 @@
   <!--Search-->
         <div class="user-block clearfix">
           <div class="search-btn">
-	        <a href="#" class="search-btn-img">
-	        <span class="search-icon"></span>
+	        <a href="#">
+	        <span class="icon sprite-look"></span>
 	        </a>
           </div>
   <!--Login-->
           <div class="login">
-	        <a href="#" class="btn-special login-btn-first">
-	        <span class="login-icon">Вход</span>
+	        <a href="#">
+	        <span class="icon login-icon">Вход</span>
 	        </a>
           </div>
   <!--Basket-->
           <div class="basket">
-            <a href="#" class="btn-special basket-btn">
-            <span class="basket-icon">Пусто</span>
+            <a href="#">
+            <span class="icon sprite-basket">Пусто</span>
             </a>
 	        </div>
   <!--Contact info-->
@@ -65,7 +67,6 @@
 	          <p>8 812 450-25-25</p>
 	        </div>
 	      </div>
-       </div>
     </header>
 <!--Slider-->
     <div class="slider">
@@ -90,26 +91,32 @@
 <!--Main Field-->
     <main class="container">
   <!--Banner-->
-      <div class="banner clearfix">
+      <div class="row">
+      <div class="col-lg-1">
+      <!--<div class="banner clearfix">-->
         <div class="banner-first">
-          <h3 class="banner-title">Малинка даром</h3>
+          <h3 class="banner-title">Малинка даром!</h3>
           <p class="banner-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ
             банку малинового варенья бесплатно.</p>
           <a href="#" class="btn-default banner-first-btn">Хочу варенье!</a>
         </div>
+        </div>
+        <div class="col-lg-1">
         <div class="banner-second">
           <h3 class="banner-title">Шоколадки даром!</h3>
           <p class="banner-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
             шоколадной присыпки совершенно бесплатно.</p>
           <a href="#" class="btn-default banner-second-btn">Хочу шоколадки!</a>
         </div>
+        </div>
+      <!--</div>-->
       </div>
   <!--Items list-->
       <div class="popular-items">
     <!--1-->
         <div class="ice-cream ice-cream-popular">
           <span class="ice-cream-icon"></span>
-          <img class="ice-cream-pic" src="img/ice-cream-1.jpg" alt="Сливочное с апельсиновым кремом" width="267" height="267">
+          <img class="ice-cream-pic" src="img/ice-cream-1.png" alt="Сливочное с апельсиновым кремом" width="250" height="250">
           <span class="ice-cream-price">310</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -121,7 +128,7 @@
     <!--2-->
         <div class="ice-cream ice-cream-popular">
           <span class="ice-icon"></span>
-          <img class="ice-pic" src="img/ice-cream-2.jpg" alt="Сливочно-кофейное" width="267" height="267">
+          <img class="ice-pic" src="img/ice-cream-2.png" alt="Сливочно-кофейное" width="250" height="250">
           <span clacc="ice-price">380</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -133,7 +140,7 @@
     <!--3-->
         <div class="ice-cream ice-cream-popular">
           <span class="ice-icon"></span>
-          <img class="ice-pic" src="img/ice-cream-3.jpg" alt="Сливочно-клубничное" width="267" height="267">
+          <img class="ice-pic" src="img/ice-cream-3.png" alt="Сливочно-клубничное" width="250" height="250">
           <span clacc="ice-price">355</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -145,7 +152,7 @@
     <!--4-->
         <div class="ice-cream ice-cream-popular">
           <span class="ice-icon"></span>
-          <img class="ice-pic" src="img/ice-cream-4.jpg" alt="Сливочное крем-брюле" width="267" height="267">
+          <img class="ice-pic" src="img/ice-cream-4.png" alt="Сливочное крем-брюле" width="250" height="250">
           <span clacc="ice-price">415</span>
           <span class="rubble"></span>
           <span class="ice-cream-measure">/кг</span>
@@ -193,23 +200,27 @@
         </div>
       </div>
   <!--Blog news-->
+  	  <div class="row">
+  	  <div class="col-lg-1">
       <div class="blog-news">
         <b>Новое в нашем блоге</b>
-        <img src="img/blog-ground.jpg" class="blog-news-pic" alt="blog-news-pic" width="560" height="220">
         <a href="#" class="blog-link">10 способов сервировки фруктовых щербетов к столу</a>
       </div>
+      </div>
   <!--Subscribe-->
+      <div class="col-lg-1">
       <div class="subscribe">
         <p class="subscribe-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
           самого вкусного, что у нас происходит. Обещаем не спамить и не слать
           всякой не нужной ерунды. Честно =)</p>
         <input type="email" class="email" placeholder="Ваша электронная почта">
-        <button class="btn-default subscribe-btn" name="subscribe-btn" type="submit" value="Отправить">
+        <button class="btn-default subscribe-btn" name="subscribe-btn" type="submit" value="Отправить"></button>
       </div>
+      </div>
+      </div>
+    </main>
   <!--Map area-->
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.590520885641!2d30.32106627707949!3d59.93893660159543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1472028100386" width="1200" height="428" frameborder="0" style="border:0" allowfullscreen>
-        </iframe>
+  		<div class="map">
         <div class="map-marker">
         </div>
         <div class="map-contact-field">
@@ -227,16 +238,15 @@
           <p>(с 10 до 20 ежедневно)</p>
           <a class="btn-default contact-btn" href="#">Форма обратной связи</a>
         </div>
-      </div>
-    </main>
+        </div>
 <!--Footer-->
     <footer class="container">
   <!--Social-->
       <section class="footer-social">
-        <a class="social-btn social-btn-tw" href="#">Twitter</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-tw" href="#"><span class="icon sprite-twitter"></span></a>
+        <a class="social-btn social-btn-inst" href="#"></a>
+        <a class="social-btn social-btn-fb" href="#"></a>
+        <a class="social-btn social-btn-vk" href="#"></a>
       </section>
   <!--Links-->
       <div class="footer-hot-links">
