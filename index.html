@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <link href="css/normalize.css" type="text/css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 <!--Общее-->
@@ -27,7 +27,7 @@
 <!--Main navigation-->
 	      <nav class="main-nav">
 	        <ul>
-	          <li><a href="#"">Каталог</a>
+	          <li><a href="#">Каталог</a>
                 <ul class="sub-main-nav">
                   <li><a href="#"><b>Новинки</b></a></li>
                   <span class="sub-main-nav-line"></span>
@@ -45,20 +45,22 @@
   <!--Search-->
         <div class="user-block clearfix">
           <div class="search-btn">
-	        <a href="#">
-	        <span class="icon sprite-look"></span>
-	        </a>
+	          <a href="#">
+	            <span class="icon sprite-look"></span>
+	          </a>
           </div>
   <!--Login-->
           <div class="login">
-	        <a href="#">
-	        <span class="icon login-icon">Вход</span>
-	        </a>
+            <span class="icon login-icon"></span>
+	          <a href="#">
+	            Вход
+	          </a>
           </div>
   <!--Basket-->
           <div class="basket">
+            <span class="icon sprite-basket"></span>
             <a href="#">
-            <span class="icon sprite-basket">Пусто</span>
+              Пусто
             </a>
 	        </div>
   <!--Contact info-->
@@ -94,19 +96,19 @@
       <div class="row">
       <div class="col-lg-1">
       <!--<div class="banner clearfix">-->
-        <div class="banner-first">
+        <div class="banner-wrap  banner-first">
           <h3 class="banner-title">Малинка даром!</h3>
           <p class="banner-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ
             банку малинового варенья бесплатно.</p>
-          <a href="#" class="btn-default banner-first-btn">Хочу варенье!</a>
+          <a href="#" class="btn-default  slide-btn  banner-btn">Хочу варенье!</a>
         </div>
         </div>
         <div class="col-lg-1">
-        <div class="banner-second">
+        <div class="banner-wrap  banner-second">
           <h3 class="banner-title">Шоколадки даром!</h3>
           <p class="banner-description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
             шоколадной присыпки совершенно бесплатно.</p>
-          <a href="#" class="btn-default banner-second-btn">Хочу шоколадки!</a>
+          <a href="#" class="btn-default  slide-btn  banner-btn">Хочу шоколадки!</a>
         </div>
         </div>
       <!--</div>-->
@@ -115,48 +117,56 @@
       <div class="popular-items">
     <!--1-->
         <div class="ice-cream ice-cream-popular">
-          <span class="ice-cream-icon"></span>
+          <span class="icon  ice-cream-icon"></span>
           <img class="ice-cream-pic" src="img/ice-cream-1.png" alt="Сливочное с апельсиновым кремом" width="250" height="250">
-          <span class="ice-cream-price">310</span>
-          <span class="rubble"></span>
-          <span class="ice-cream-measure">/кг</span>
-          <p class="ice-cream-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          <div class="ice-price">
+            <span class="ice-price__price">310</span>
+            <span class="icon  rubble"></span>
+            <span class="ice-cream-measure">/кг</span>
+          </div>
+          <p><a href="#" class="ice-cream-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</a><p>
             <div class="ice-cream-footer">
               <a href="#" class="btn-default ice-cream-footer-btn">Быстрый просмотр</a>
             </div>
         </div>
     <!--2-->
         <div class="ice-cream ice-cream-popular">
-          <span class="ice-icon"></span>
+          <span class="icon  ice-cream-icon"></span>
           <img class="ice-pic" src="img/ice-cream-2.png" alt="Сливочно-кофейное" width="250" height="250">
-          <span clacc="ice-price">380</span>
-          <span class="rubble"></span>
-          <span class="ice-cream-measure">/кг</span>
-          <p class="ice-cream-title">Сливочно-кофейное с кусочками шоколада</p>
+          <div class="ice-price">
+            <span class="ice-price__price">380</span>
+            <span class="icon  rubble"></span>
+            <span class="ice-cream-measure">/кг</span>
+          </div>
+          <p><a href="#" class="ice-cream-title">Сливочно-кофейное с кусочками шоколада</a><p>
             <div class="ice-cream-footer">
               <a href="#" class="btn-default ice-cream-footer-btn">Быстрый просмотр</a>
             </div>
         </div>
     <!--3-->
         <div class="ice-cream ice-cream-popular">
-          <span class="ice-icon"></span>
+          <span class="icon  ice-cream-icon"></span>
           <img class="ice-pic" src="img/ice-cream-3.png" alt="Сливочно-клубничное" width="250" height="250">
-          <span clacc="ice-price">355</span>
-          <span class="rubble"></span>
-          <span class="ice-cream-measure">/кг</span>
-          <p class="ice-cream-title">Сливочно-клубничное с присыпкой из белого шоколада</p>
+          <div class="ice-price">
+            <span class="ice-price__price">415</span>
+            <span class="icon  rubble"></span>
+            <span class="ice-cream-measure">/кг</span>
+          </div>
+          <p><a href="#" class="ice-cream-title">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
             <div class="ice-cream-footer">
               <a href="#" class="btn-default ice-cream-footer-btn">Быстрый просмотр</a>
             </div>
         </div>
     <!--4-->
         <div class="ice-cream ice-cream-popular">
-          <span class="ice-icon"></span>
+          <span class="icon  ice-cream-icon"></span>
           <img class="ice-pic" src="img/ice-cream-4.png" alt="Сливочное крем-брюле" width="250" height="250">
-          <span clacc="ice-price">415</span>
-          <span class="rubble"></span>
-          <span class="ice-cream-measure">/кг</span>
-          <p class="ice-cream-title">Сливочное крем-брюле с карамельной подливкой</p>
+          <div class="ice-price">
+            <span class="ice-price__price">415</span>
+            <span class="icon  rubble"></span>
+            <span class="ice-cream-measure">/кг</span>
+          </div>
+          <p><a href="#" class="ice-cream-title">Сливочное крем-брюле с карамельной подливкой</a></p>
             <div class="ice-cream-footer">
               <a href="#" class="btn-default ice-cream-footer-btn">Быстрый просмотр</a>
             </div>
@@ -169,14 +179,14 @@
           по продаже мороженого собственного производства на развес
         </h2>
     <!--First feature-->
-        <div class="feature-first">
+        <div class="feature-item">
           <span class="feature-icon"></span>
           <p>Все наше мороженое изготавливается на собственном производстве,
             с использованием современного оборудования и проверенных временем технологий.
           </p>
         </div>
     <!--Second feature-->
-        <div class="feature-second">
+        <div class="feature-item">
           <span class="feature-icon"></span>
           <p>Для приготовления мороженого используются настоящие сливки и молоко
             высочайшего качества. Все дополнительные ингредиенты и добавки
@@ -184,14 +194,14 @@
           </p>
         </div>
     <!--Third feature-->
-        <div class="feature-third">
+        <div class="feature-item">
           <span class="feature-icon"></span>
           <p>Закупка ингредиентов  производится только у проверенных фермерских
             хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
           </p>
         </div>
     <!--Fourth feature-->
-        <div class="feature-fourth">
+        <div class="feature-item">
           <span class="feature-icon"></span>
           <p>Доставка нашего мороженого до заказчиков осуществляется в специальном
             термопаке, который не дает мороженому растаять в пути и позволяет
@@ -204,69 +214,75 @@
   	  <div class="col-lg-1">
       <div class="blog-news">
         <b>Новое в нашем блоге</b>
-        <a href="#" class="blog-link">10 способов сервировки фруктовых щербетов к столу</a>
+        <p><a href="#" class="blog-link">10 способов сервировки фруктовых щербетов к столу</a><p>
       </div>
       </div>
   <!--Subscribe-->
       <div class="col-lg-1">
       <div class="subscribe">
-        <p class="subscribe-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
-          самого вкусного, что у нас происходит. Обещаем не спамить и не слать
-          всякой не нужной ерунды. Честно =)</p>
-        <input type="email" class="email" placeholder="Ваша электронная почта">
-        <button class="btn-default subscribe-btn" name="subscribe-btn" type="submit" value="Отправить"></button>
+        <div class="subscribe__wrapper">
+          <p class="subscribe-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
+            самого вкусного, что у нас происходит. Обещаем не спамить и не слать
+            всякой не нужной ерунды. Честно =)</p>
+          <input type="email" class="email" placeholder="Электронная почта">
+          <button class="btn-default  slide-btn  banner-btn" style="margin-top: -8px;" name="subscribe-btn" type="submit" value="Отправить">Отправить</button>
+        </div>
       </div>
       </div>
       </div>
     </main>
+  </div>
+</div>
   <!--Map area-->
   		<div class="map">
+        <!-- <iframe src="https://yandex.ru/map-widget/v1/-/C6q7ETmP" width="100%" height="400" frameborder="0"></iframe> -->
         <div class="map-marker">
         </div>
         <div class="map-contact-field">
-          <p>
+          <p class="map-contact-field--small">
               Адрес главного офиса и<br>
               офлайн магазина:<br>
-
-           <b>ул. Большая Конюшенная<br>
-              19/8, Санкт-Петербург</b>
           </p>
-          <p>
-              Для заказов по телефону:<br>
-           <b>8 812 450-25-25</b>
-         </p>
+          <p>ул. Большая Конюшенная<br>
+              19/8, Санкт-Петербург
+          </p>
+          <p class="map-contact-field--small">
+              Для заказов по телефону:
+          </p>
+          <b>8 812 450-25-25</b>
+
           <p>(с 10 до 20 ежедневно)</p>
           <a class="btn-default contact-btn" href="#">Форма обратной связи</a>
         </div>
         </div>
 <!--Footer-->
-    <footer class="container">
-  <!--Social-->
+    <!-- <footer class="container">
+
       <section class="footer-social">
         <a class="social-btn social-btn-tw" href="#"><span class="icon sprite-twitter"></span></a>
         <a class="social-btn social-btn-inst" href="#"></a>
         <a class="social-btn social-btn-fb" href="#"></a>
         <a class="social-btn social-btn-vk" href="#"></a>
       </section>
-  <!--Links-->
+
       <div class="footer-hot-links">
         <a href="#"><b>Для поставщиков</b></a>
         <a href="#">О производстве</a>
         <a href="#">Наши документы</a>
         <a href="#">Экологические стандарты</a>
       </div>
-  <!--Copyright-->
+
       <div class="copyright">
         <img src="img/academy-logo.svg" class="academy-logo" alt="html-academy" width="108" height="38">
         <p>Сделано в<a href="#">HTML Academy</a> &copy; 2016</p>
       </div>
     </footer>
-<!--Search-popup-->
+
     <div class="search-popup">
       <label for="search">Что ищем?</label>
       <input type="search" id="search" name="search">
     </div>
-<!--login-popup-->
+
     <div class="login-popup">
       <form action="#" method="post" class="login-entrance">
         <label for="email">Электронная почта</label>
@@ -278,7 +294,7 @@
       <a href="#" class="forgotten-login">Забыли пароль?</a>
       <a href="#" class="new-sign-up">Новая регистрация</a>
     </div>
-<!--Feedback-->
+
       <div class="feedback">
         <a href="#" class="btn-default btn-feedback">Давайте оба!</a>
         <form action="#" method="post" class="feedback-form">
@@ -293,8 +309,7 @@
             <button class="btn-default feedback-btn" type="submit">Отправить</button>
           </fieldset>
         </form>
-      </div>
-    </div>
-   </div>
+      </div> -->
+
   </body>
 </html>
